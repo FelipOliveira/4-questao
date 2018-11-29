@@ -59,9 +59,9 @@ arquivo = open("QuickResult.txt","a")
 
 vet = []
 #n = int(input("Quantos números no vetor?"))
-i = 10
+i = 1000
 #for i in range(10, 10000):
-while(i<5010):
+while(i<=10000):
 	preenche(vet, i)
 	n = len(vet)
 	start = time.clock()
@@ -73,7 +73,7 @@ while(i<5010):
 	print(i,"- Tempo parcial:",tTotal)
 	
 	arquivo.write("%d\t%f\n"%(i, tTotal))
-	i += 10
+	i += 1000
 print("Terminado.")
 arquivo.close()
 

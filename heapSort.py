@@ -69,11 +69,11 @@ arr = []
 arr2 = []
 arr3 = []
 
-arquivo = open("HeapResultCres.txt","a")
+arquivo = open("HeapResultAle.txt","a")
 
-i = 100
-while(i <= 5000):
-	preenche(arr,1,i)
+i = 1000
+while(i <= 10000):
+	preenche(arr,3,i)
 	
 	start = time.clock()
 	heapSort(arr)
@@ -83,6 +83,6 @@ while(i <= 5000):
 	
 	print(i,"- Tempo parcial:",tTotal)
 	arquivo.write("%d\t%f\n"%(i, tTotal))
-	i += 100
+	i += 1000
 
 arquivo.close()

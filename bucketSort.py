@@ -118,21 +118,20 @@ def re_hashing( i, code ):
 
 def preenche(array, n):
 	for i in range(0, n):
-		aux = random.randint(1,10)
+		aux = random.randint(1,n)
 		#print(aux)
 		array.insert(0, aux)
 
-arquivo = open("BucketResult2.txt","w")
+arquivo = open("BucketResult.txt","w")
 arquivo.write("tamanho do vetor\ttempo decorrido\n")
 arquivo.close()
 
 print("BUCKET=SORT=========================")
-arquivo = open("BucketResult2.txt","a")
+arquivo = open("BucketResult.txt","a")
 
 vet = []
 #n = int(input("Quantos números no vetor?"))
 i = 10
-#for i in range(10, 10000):
 
 while(i<5010):
 	preenche(vet, i)

@@ -30,9 +30,9 @@ arquivo = open("CoutingResult.txt","a")
 
 vet = []
 #n = int(input("Quantos números no vetor?"))
-i = 10
+i = 1000
 #for i in range(10, 10000):
-while(i<10000):
+while(i<=10000):
 	preenche(vet, i)
 	maximo = max(vet)
 	start = time.clock()
@@ -44,6 +44,6 @@ while(i<10000):
 	print(i,"- Tempo parcial:",tTotal,"Maior elemento:",maximo)
 	
 	arquivo.write("%d\t%f\n"%(i, tTotal))
-	i += 10
+	i += 1000
 print("Terminado.")
 arquivo.close()
